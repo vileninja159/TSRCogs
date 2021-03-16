@@ -4,7 +4,9 @@ import asyncio
 
 class Mycog(commands.Cog):
     """My custom cog"""
-        
+      
+      
+      @commands.command()
 async def mycom(message):
   text_channel = client.get_channel('806000602168819723')
   msg = '{0.author.mention}\nWrong text channel\nUse {1.mention}'.format(message,text_channel)
