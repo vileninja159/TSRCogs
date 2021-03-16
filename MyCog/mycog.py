@@ -4,5 +4,5 @@ class Mycog(commands.Cog):
     """My custom cog"""
 
     @commands.command()
-  async def mycom(ctx):
+  async def mycom(self, ctx):
      await ctx.send(ctx.message.guild.default_role)
