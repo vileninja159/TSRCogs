@@ -7,7 +7,7 @@ class Mycog(commands.Cog):
         
       @client.event
 async def mycom(message):
-  text_channel = client.get_channel('1234567890')
+  text_channel = client.get_channel('806000602168819723')
   msg = '{0.author.mention}\nWrong text channel\nUse {1.mention}'.format(message,text_channel)
   if message.content.startswith('.ann'):
       await client.delete_message(message)
